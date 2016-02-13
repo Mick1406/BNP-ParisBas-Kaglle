@@ -1,5 +1,5 @@
-# BNP-ParisBas-Kaglle
-Kaglle Competition for BNP ParisBas
+# BNP-ParisBas-Kaggle
+Kaggle Competition for BNP ParisBas
 Download train & test csv files at
 https://www.kaggle.com/c/bnp-paribas-cardif-claims-management/data
 
