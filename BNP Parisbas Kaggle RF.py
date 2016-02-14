@@ -94,4 +94,20 @@ for var in cat_names:
 
 
 #predictions
-preds_forsub=clf.predict(df_test[features])
+preds_forsub = clf.predict(df_test[features])
+preds_proba_forsub = clf.predict_proba(df_test[features])
+
+preds_proba_forsub[:10,1]
+
+
+#create final file for submission
+#column label ID and PredictedProb
+dfprob = pd.DataFrame(preds_proba_forsub,columns=['InvPredictedProb','PredictedProb'])
+dfprob.head()
+dfSubmission = pd.concat([df_test['ID'],dfprob['PredictedProb']],axis=1)
+dfSubmission.head()
+
+dfSubmission.to_csv('submission1.csv',index=False)
+
+
+
