@@ -4,13 +4,10 @@ Download train & test csv files at
 https://www.kaggle.com/c/bnp-paribas-cardif-claims-management/data
 
 
-Create a simple random forest model for predicting claim type.
-Very basic missing values handling have been applied
+Random forest model for predicting claim type.
+Very basic missing values handling have been applied (this submission ranked me in 537th place in Kaggle leaderboard)
 
-Next iteration will include:
-
+Recommendation for improvements
 -recursive feature elimination for clsfer
-
 -grouping of categorical variables
-
 -log transformation
